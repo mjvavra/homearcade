@@ -21,11 +21,22 @@ export function Page() {
 
   return (
     <div>
-      <h1>Home Arcade</h1>
-      <img alt="house" src={house} />
-      <button ref={btnRef} type="submit" onKeyDown={home}>
-        PRESS SPACEBAR
-      </button>
+      <div className="container-page-title">
+        <p className="page-title">Home Arcade</p>
+      </div>
+      <div className="content">
+        <img alt="house" src={house} />
+      </div>
+      <div className="bottom-button">
+        <button
+          className="home-button"
+          ref={btnRef}
+          type="button"
+          onKeyDown={home}
+        >
+          PRESS SPACEBAR
+        </button>
+      </div>
     </div>
   );
 }
